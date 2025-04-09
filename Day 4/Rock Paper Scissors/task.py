@@ -31,10 +31,13 @@ if user == 0:
     print(rock)
 elif user == 1:
     print(paper)
-else:
+elif user == 2:
     print(scissors)
 computer = random.choice(NPC)
-print(f"Computer Choose this \n" +computer)
+if user <3 :
+    print(f"Computer Choose this \n {computer}")
+else :
+    print("Invalid input")
 
 if computer == rock and user == 0 or computer == paper and user == 1 or computer == scissors and user == 2 :
     print("Its a draw")
